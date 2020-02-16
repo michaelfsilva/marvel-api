@@ -1,7 +1,5 @@
 package com.marvel.api.model;
 
-import java.util.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,12 +13,29 @@ public class Character {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotEmpty(message = "Name can't be empty")
+	@NotEmpty(message = "Name attribute is mandatory")
 	private String name;
 	private String description;
 	private String superPowers;
 //	private List<String> movies;
 //	private List<String> series;
+	
+	public Character() {}
+
+	public Character(String name, String description, String superPowers) {
+		super();
+		this.name = name;
+		this.description = description;
+		this.superPowers = superPowers;
+	}
+
+	public Character(Long id, String name, String description, String superPowers) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.superPowers = superPowers;
+	}
 	
 	public Long getId() {
 		return id;

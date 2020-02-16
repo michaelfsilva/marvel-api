@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f2b22e0b-2ac7-44ab-9244-168be0cf090a",
+		"_postman_id": "a108b327-ac7a-47f1-b49f-c2a7c79b32c4",
 		"name": "MarvelAPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -70,7 +70,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/v1/characters/3",
+					"raw": "http://localhost:8080/v1/characters/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -79,7 +79,7 @@
 					"path": [
 						"v1",
 						"characters",
-						"3"
+						"2"
 					]
 				},
 				"description": "Get character data by its id"
@@ -107,7 +107,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/v1/characters/findByName/Thor",
+					"raw": "http://localhost:8080/v1/characters/findByName/hulk",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -117,10 +117,10 @@
 						"v1",
 						"characters",
 						"findByName",
-						"Thor"
+						"hulk"
 					]
 				},
-				"description": "Get character data by its name"
+				"description": "Get character data by its name ignoring case"
 			},
 			"response": []
 		},
@@ -304,7 +304,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/v1/characters/3",
+					"raw": "http://localhost:8080/v1/characters/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -313,7 +313,7 @@
 					"path": [
 						"v1",
 						"characters",
-						"3"
+						"2"
 					]
 				},
 				"description": "Delete a character by its id"

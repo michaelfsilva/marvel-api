@@ -10,5 +10,5 @@ public interface CharacterRepository extends JpaRepository<Character, Long> {
 	 * @param name
 	 * @return character
 	 */
-	Character findByName(String name);
+	Character findByNameIgnoreCaseContaining(String name);
 }

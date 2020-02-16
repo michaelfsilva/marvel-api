@@ -32,7 +32,7 @@ public class CharacterServiceImpl implements CharacterService {
 	
 	@Override
 	public Character listByName(String name) {
-		return characterRepository.findByName(name);
+		return characterRepository.findByNameIgnoreCaseContaining(name);
 	}
 
 	@Override
