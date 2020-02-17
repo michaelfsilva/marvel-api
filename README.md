@@ -17,7 +17,7 @@ $ mvn spring-boot:run
 ```
 If not:
 ```
-$ java -jar target/marvel-api-0.0.1-SNAPSHOT.jar
+$ java -jar marvel-api-0.0.1-SNAPSHOT.jar
 ```
 Access http://localhost:8080/v1/characters/ with user "test" and password "marvel" to see a list of characters.
 
