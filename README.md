@@ -24,7 +24,7 @@ Access http://localhost:8080/v1/characters/ with user "test" and password "marve
 ### APIs endpoints
 GET http://localhost:8080/v1/characters/ [list all characters]  
 GET http://localhost:8080/v1/characters/{id} [list a character by ID]  
-GET http://localhost:8080/v1/characters/findByName/hulk [list a character by name ignoring case]  
+GET http://localhost:8080/v1/characters/findByName/{name} [list a character by name ignoring case]  
 POST http://localhost:8080/v1/characters/ [add a new character]  
 PUT http://localhost:8080/v1/characters/{id} [update character all attributes]  
 PATCH http://localhost:8080/v1/characters/{id} [update one or more attrubutes of a character]  
