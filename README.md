@@ -7,9 +7,9 @@ The H2 Database was chosen to be easy for testing without the necessity of confi
 Based on https://developer.marvel.com/docs#!/public
 
 ### Instructions to use
-Download the zip project by clicking on Clone or download button, then Downlod ZIP;
-Extract the zip file and open a terminal in the folder extracted;
-Run the following command:
+Download the zip project by clicking on Clone or download button, then Downlod ZIP;  
+Extract the zip file and open a terminal in the folder extracted;  
+Run the following command:  
 
 If you have maven installed:
 ```
