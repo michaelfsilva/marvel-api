@@ -16,9 +16,6 @@ import java.util.Collections;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
-/**
- * @author William Suane for DevDojo on 8/28/17.
- */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -26,27 +23,27 @@ public class SwaggerConfig {
     public Docket apiDoc() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                    .apis(RequestHandlerSelectors.basePackage("br.com.devdojo.endpoint"))
+                    .apis(RequestHandlerSelectors.basePackage("com.marvel.api.resources"))
                     .paths(regex("/v1.*"))
                     .build()
-                .globalOperationParameters(Collections.singletonList(new ParameterBuilder()
-                    .name("Authorization")
-                    .description("Bearer token")
-                    .modelRef(new ModelRef("string"))
-                    .parameterType("header")
-                    .required(true)
-                    .build()))
+//                .globalOperationParameters(Collections.singletonList(new ParameterBuilder()
+//                    .name("Authorization")
+//                    .description("Bearer token")
+//                    .modelRef(new ModelRef("string"))
+//                    .parameterType("header")
+//                    .required(true)
+//                    .build()))
                 .apiInfo(metaData());
     }
 
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
-                .title("Spring Boot Essentials By DevDojo")
-                .description("The best spring course out there")
+                .title("Marvel API")
+                .description("API to provide Marvel Comics data")
                 .version("1.0")
-                .contact(new Contact("William Suane", "http://devdojo.com.br", "william.suane@devdojo.com.br"))
+                .contact(new Contact("Michael Silva", "https://github.com/michaelfsilva", "michael.fsilva02@gmail.com"))
                 .license("Apache License Version 2.0")
-                .licenseUrl("https://www.apache.org/license/LICENSE-2.0")
+                .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
                 .build();
     }
 }

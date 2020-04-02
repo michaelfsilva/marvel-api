@@ -21,6 +21,11 @@ $ java -jar marvel-api-0.0.1-SNAPSHOT.jar
 ```
 Access http://localhost:8080/v1/characters/ with user "test" and password "marvel" to see a list of characters.
 
+###API Documentation
+
+http://localhost:8080/v2/api-docs  
+http://localhost:8080/swagger-ui.html
+
 ### APIs endpoints
 GET http://localhost:8080/v1/characters/ [list all characters]  
 GET http://localhost:8080/v1/characters/{id} [list a character by ID]  
