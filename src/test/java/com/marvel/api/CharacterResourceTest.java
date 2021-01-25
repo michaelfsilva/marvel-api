@@ -28,16 +28,16 @@ import com.marvel.api.repository.CharacterRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@AutoConfigureMockMvc
+//@AutoConfigureMockMvc
 public class CharacterResourceTest {
 	@Autowired
     private TestRestTemplate restTemplate;
     @LocalServerPort
     private int port;
-    @MockBean // Mockito simular o repositorio e não altera os dados do banco, utiliza dados falsos
+    @MockBean // Mockito simula o repositorio e não altera os dados do banco, utiliza dados falsos
     private CharacterRepository characterRepository;
-    @Autowired
-    private MockMvc mockMvc;
+//    @Autowired
+//    private MockMvc mockMvc;
 
     @TestConfiguration
     static class Config {
