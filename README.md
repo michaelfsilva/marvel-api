@@ -32,6 +32,5 @@ GET http://localhost:8080/v1/characters/{id} [list a character by ID]
 GET http://localhost:8080/v1/characters/findByName/{name} [list a character by name ignoring case]  
 POST http://localhost:8080/v1/characters/ [add a new character]  
 PUT http://localhost:8080/v1/characters/{id} [update character all attributes]  
-PATCH http://localhost:8080/v1/characters/{id} [update one or more attrubutes of a character]  
+PATCH http://localhost:8080/v1/characters/{id} [update one or more attributes of a character]  
 DELETE http://localhost:8080/v1/characters/{id} [remove a character]  
-
