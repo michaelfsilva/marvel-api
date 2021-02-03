@@ -3,6 +3,8 @@ package com.marvel.api.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.marvel.api.model.Character;
 
+import java.util.List;
+
 public interface CharacterRepository extends JpaRepository<Character, Long> {
 	/**
 	 * Find character by Name
@@ -10,5 +12,5 @@ public interface CharacterRepository extends JpaRepository<Character, Long> {
 	 * @param name
 	 * @return character
 	 */
-	Character findByNameIgnoreCaseContaining(String name);
+	List<Character> findByNameIgnoreCaseContaining(String name);
 }

@@ -13,7 +13,7 @@ public interface CharacterService {
 
 	Character listById(Long id);
 
-	Character listByName(String name);
+	List<Character> listByName(String name);
 	
 	Character add(@Valid Character character);
 

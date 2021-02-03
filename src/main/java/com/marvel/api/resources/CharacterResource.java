@@ -53,14 +53,14 @@ public class CharacterResource {
 	}
 	
 	@GetMapping("/findByName/{name}")
-	public ResponseEntity<Response<Character>> getByName(@PathVariable String name) {
-		Character character = this.characterService.listByName(name);
+	public ResponseEntity<Response<List<Character>>> getByName(@PathVariable String name) {
+		List<Character> character = this.characterService.listByName(name);
 		
 		if (character == null) {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 		
-		return ResponseEntity.ok(new Response<Character>(character));
+		return ResponseEntity.ok(new Response<List<Character>>(character));
 	}
 		
 	@PostMapping(consumes = "application/json")
